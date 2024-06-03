@@ -1,0 +1,9 @@
+{
+    "welcome": "Welcome to React and react-i18next",
+    "description": "This is an example of internationalization" , 
+    "home": "Home" , 
+    "contact": "Contcat Us",
+    "about": "About Us" ,
+    "services": "Services"
+
+}

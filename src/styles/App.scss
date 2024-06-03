@@ -1,0 +1,63 @@
+@import './vars.scss' ; 
+@font-face {
+    font-family: 'avenir';
+    src: url('../assets/fonts/Avenir.ttc') format('truetype-collection');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+*{
+    margin:0;
+    padding: 0
+}
+body {
+    background-color: $background-color;
+    font-size: 12;
+    color: $text-color;
+    font-family: 'avenir ' , sans-serif  ;
+
+    a{
+        color: $primary-color;
+        text-decoration: none;
+
+    }
+}
+
+
+.header {
+    background-color: $header-background-color;
+    padding: 0 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+    .logo {
+      width: 150px;
+      height: auto;
+      margin-right: 20px;
+    }
+  
+    nav {
+
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        
+  
+        li {
+          a {
+            color: $link-color;
+            text-decoration: none;
+  
+            &:hover {
+              text-decoration: underline;
+              color: $link-hover-color;
+            }
+          }
+        }
+      }
+    }
+  }

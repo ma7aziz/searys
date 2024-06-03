@@ -1,0 +1,16 @@
+$primary-color: #2a3f92;
+$secondary-color: #4daa90;
+$text-color: #455167;
+$background-color: #f1f9fc;
+$header-background-color: #fff;
+$link-color: #3498db;
+$link-hover-color: darken($link-color, 10%);
+
+
+
+@font-face {
+    font-family: 'avenir';
+    src: url('../assets/fonts/Avenir.ttc') format('truetype-collection');
+    font-weight: normal;
+    font-style: normal;
+  }
