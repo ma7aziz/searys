@@ -1,4 +1,6 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/App.scss'
 import Home from "./components/Home";
 import Contact from "./components/Contact"
 import About from "./components/About"

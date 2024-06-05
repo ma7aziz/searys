@@ -7,18 +7,20 @@ const Header = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <header className="header">
-      <img src={logo} alt="Logo" className="logo" />
-      <nav aria-label="Main Navigation">
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-        </ul>
-      </nav>
-    </header>
+    <nav className="navigation" aria-label='main-navigation'>
+      <img loading="lazy" src={logo} alt="" className="nav-logo" />
+      <ul className='nav-links'>
+        <li><Link className='nav-link' to="/">Home</Link></li>
+        <li><Link className='nav-link' to="/about">Services</Link></li>
+        <li><Link className='nav-link' to="/about">About</Link></li>
+        <li><Link className='nav-link' to="/contact">Contact</Link></li>
+      </ul>
+    </nav>
 
-  ) 
+
+
+    
+  )
 
 }
 
