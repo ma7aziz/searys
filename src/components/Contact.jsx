@@ -1,18 +1,11 @@
+// Contact.js
 import React, { useRef, useEffect, useState } from 'react';
 import { gsap } from 'gsap';
-import emailjs from 'emailjs-com';
-
+import ContactForm from './sections/ContactForm';
 
 function Contact() {
   const textRef = useRef(null);
   const contentRef = useRef(null);
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    message: ''
-  });
-  const [errors, setErrors] = useState({});
   const [showSuccessNotification, setShowSuccessNotification] = useState(false);
 
   useEffect(() => {
@@ -41,40 +34,11 @@ function Contact() {
     );
   }, []);
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.id]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const newErrors = {};
-    if (!formData.name) newErrors.name = 'Name is required';
-    if (!formData.phone) newErrors.phone = 'Phone is required';
-    if (!formData.email) newErrors.email = 'Email is required';
-    if (!formData.message) newErrors.message = 'Message is required';
-
-    setErrors(newErrors);
-
-    if (Object.keys(newErrors).length === 0) {
-      // All fields are valid, send the email
-      console.log('send message ')
-    
-          setShowSuccessNotification(true); // Show success notification
-          setTimeout(() => {
-            setShowSuccessNotification(false); // Hide notification after 3 seconds
-          }, 8000);
-          setFormData({
-            name: '',
-            phone: '',
-            email: '',
-            message: ''
-          }); // Clear the form
-        
-    }
+  const handleSuccess = () => {
+    setShowSuccessNotification(true);
+    setTimeout(() => {
+      setShowSuccessNotification(false);
+    }, 3000); // Adjust the timeout as needed
   };
 
   return (
@@ -118,56 +82,7 @@ function Contact() {
 
           <div className="col-md-6">
             <h3 className='fw-semibold'>Send A Message</h3>
-            <form className='mt-4' onSubmit={handleSubmit}>
-              <div className="mb-3">
-                <input
-                  type="text"
-                  className={`form-control custom-input ${errors.name ? 'is-invalid' : ''}`}
-                  id="name"
-                  placeholder="Name"
-                  value={formData.name}
-                  onChange={handleChange}
-                />
-                {errors.name && <div className="invalid-feedback">{errors.name}</div>}
-              </div>
-              <div className="mb-3">
-                <input
-                  type="text"
-                  className={`form-control custom-input ${errors.phone ? 'is-invalid' : ''}`}
-                  id="phone"
-                  placeholder="Phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                />
-                {errors.phone && <div className="invalid-feedback">{errors.phone}</div>}
-              </div>
-              <div className="mb-3">
-                <input
-                  type="email"
-                  className={`form-control custom-input ${errors.email ? 'is-invalid' : ''}`}
-                  id="email"
-                  placeholder="Email"
-                  value={formData.email}
-                  onChange={handleChange}
-               
-/>
-                {errors.email && <div className="invalid-feedback">{errors.email}</div>}
-              </div>
-              <div className="mb-3">
-                <textarea
-                  className={`form-control custom-input ${errors.message ? 'is-invalid' : ''}`}
-                  id="message"
-                  rows="4"
-                  placeholder="Message"
-                  value={formData.message}
-                  onChange={handleChange}
-                ></textarea>
-                {errors.message && <div className="invalid-feedback">{errors.message}</div>}
-              </div>
-              <div className='form-group d-flex justify-content-end'>
-                <button type="submit" className="contact-button">Send</button>
-              </div>
-            </form>
+            <ContactForm onSuccess={handleSuccess} />
           </div>
         </div>
       </div>

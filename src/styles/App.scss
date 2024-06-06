@@ -47,16 +47,8 @@ body {
   .section-padding {
     padding: 25px auto;
   }
-  .container {
-    max-width: 1040px;
-    margin: auto;
-  }
 
-  .row{
-    display: flex;
-    flex-wrap: wrap;
 
-  }
 
   .align-items-center{
     align-items: center;
@@ -91,6 +83,12 @@ body {
     border: none;
     outline: none;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  .text-green {
+    color: $secondary-color;
+  }
+  .bg-dark-primary{
+    background-color: $primary-color-dark !important;
   }
 }
 
@@ -275,6 +273,11 @@ body {
 //   line-height: 1.6;
 // }
 // }
+
+footer{
+  background-color: $primary-color-dark ;
+  
+}
 
 @media (max-width: 991px) {
   .navigation {

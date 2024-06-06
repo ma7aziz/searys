@@ -8,7 +8,11 @@ const Header = () => {
 
   return (
     <nav className="navigation" aria-label='main-navigation'>
+      <Link to="/">
+      
       <img loading="lazy" src={logo} alt="" className="nav-logo" />
+      </Link>
+
       <ul className='nav-links'>
         <li><Link className='nav-link' to="/">Home</Link></li>
         <li><Link className='nav-link' to="/about">Services</Link></li>
