@@ -67,7 +67,9 @@ function Button({ children, className }) {
     return (
       <>
         <header className="header">
-          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/52b597771600ee231f250cd3a2d350f0504218b29e26d6a72c3563e42f5ccf79?apiKey=5965941a686444fdbcc3d0e8a74590d8&" alt="Header Image" className="header-image" />
+          <img loading="lazy" 
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/52b597771600ee231f250cd3a2d350f0504218b29e26d6a72c3563e42f5ccf79?apiKey=5965941a686444fdbcc3d0e8a74590d8&" 
+          alt="Header Image" className="header-image" />
           <Intro />
         </header>
         

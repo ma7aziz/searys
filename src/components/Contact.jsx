@@ -1,7 +1,13 @@
-// Contact.js
 import React, { useRef, useEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import ContactForm from './sections/ContactForm';
+
+const formStyle = {
+  // backgroundColor : "#010e3d "
+  padding: "25px",
+  borderRadius : "10px",
+  backgroundColor : "rgba(42,63,146, 0.2)"
+}
 
 function Contact() {
   const textRef = useRef(null);
@@ -48,30 +54,30 @@ function Contact() {
           Elevate Your Product Line with Our Expertise in Pharmaceuticals, Nutritionals, and Cosmetics.
         </h1>
       </div>
-      <div ref={contentRef} style={{ opacity: 0 }}> {/* Initially hidden */}
+      <div> {/* Initially hidden */}
         <hr />
         <div className="row mt-2">
           <div className="col-md-6">
             <h3 className='fw-bold mb-3'>Reach Out Today!</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum cupiditate ab animi ratione, at laborum.</p>
+            <p className='text-dark'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum cupiditate ab animi ratione, at laborum.</p>
             <hr />
             <div className="row">
               <div className="col-12">
-                <p className='text-lg-start'>
+                <p className='text-lg-start text-dark'>
                   <strong className='text-primary'>Phone</strong>
                   <br />
                   +20 101236987
                 </p>
               </div>
               <div className="col-12">
-                <p className='text-lg-start'>
+                <p className='text-lg-start text-dark'>
                   <strong className='text-primary'>Email</strong>
                   <br />
                   info@pharmaco.com
                 </p>
               </div>
               <div className="col-12">
-                <p className='text-lg-start'>
+                <p className='text-lg-start text-dark'>
                   <strong className='text-primary'>Address</strong>
                   <br />
                   55 Lorem, ipsum dolor, Cairo, Egypt.
@@ -80,8 +86,8 @@ function Contact() {
             </div>
           </div>
 
-          <div className="col-md-6">
-            <h3 className='fw-semibold'>Send A Message</h3>
+          <div className="col-md-6" style={formStyle} >
+            <h2>Send A Message</h2>
             <ContactForm onSuccess={handleSuccess} />
           </div>
         </div>

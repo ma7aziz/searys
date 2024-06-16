@@ -2,6 +2,10 @@ import React from 'react'
 import { useTranslation } from 'react-i18next';
 import IntroSection from './sections/IntroSection';
 import Brief from './sections/Brief';
+import HomeCarousel from './sections/HomeCarousel';
+import AreasOfInterest from './sections/AreasOfInterest';
+import ContactUs from './sections/ContactUs';
+
 // function Home() {
 //   const { t, i18n } = useTranslation();
 //   const changeLanguage = (lng) => {
@@ -21,13 +25,32 @@ import Brief from './sections/Brief';
 
 // export default Home
 
+const emptySectionStyle ={
+  minHeight: '300px' ,
+  marginBottom : '20px'
+}
+
+function EmptySection(){
+  return (
+    <>
+      <section className='bg-dark' style={emptySectionStyle}>
+
+      </section>
+    
+    </>
+  )
+}
 
 
 function Home() {
   return (
     <>
-    <IntroSection/>
-    {/* <Brief /> */}
+
+    <HomeCarousel />
+    <EmptySection />
+    <Brief />
+    <AreasOfInterest />
+    <ContactUs />
     </>
   );
 }

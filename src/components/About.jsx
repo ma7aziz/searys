@@ -1,9 +1,9 @@
 import React from 'react'
-
 function About() {
   return (
     <>
-    <h3>ABOUT US</h3>
+      <h2>ABOUT US </h2>
+
     </>
   )
 }
