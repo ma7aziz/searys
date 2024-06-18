@@ -1,5 +1,6 @@
 
 @import './vars.scss';
+
 .nav-logo {
     width:250px;
     height: auto;
@@ -14,14 +15,25 @@ nav {
 }
 
 .navbar {
-    background-color: #fff;
-    box-sizing: content-box;
-    height: 90px;
-    padding: 10px;
-    flex-wrap: nowrap;
+  box-sizing: content-box;
+  height: 90px; 
+  padding: 10px;
+  flex-wrap: nowrap;
+  transition: top 0.5s, background-color 0.5s, width 0.5s; /* Smooth transitions for top, background-color, and width */
+  text-transform: uppercase;
+}
 
+.sticky {
+  position: fixed;
+  top: 1%;
+  left: 50%;
+  border-radius: 15px;
+  transform: translateX(-50%);
+  width: 95%; /* Adjust width as needed */
+  z-index: 1000; /* Ensure navbar is on top of other content */
+  transition: top 0.5s, background-color 0.5s, width 0.5s , z-inde 0.5s; /* Smooth transitions for top, background-color, and width */
+}
 
-  }
   
   .nav-link {
 
