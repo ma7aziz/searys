@@ -17,16 +17,10 @@ const slides = [
 ];
 
 const AreasOfInterest = () => {
-  const ImgStyle = {
-    objectFit: "cover",
-    width: "100%",
-    maxHeight: "55vh",
-    display: "block",
-    borderRadius: "10px",
-  };
+
 
   return (
-    <section className="text-center py-5 px-4 px-xl-0 d-flex flex-column justify-content-center" id="serviceSection">
+    <section className="text-center py-5 px-4 px-xl-0 d-flex flex-column flex-nowrap justify-content-center" id="serviceSection">
       <span className="text-yellow fs-5 mx-auto mb-2 text-capitalize d-flex align-items-center">
         what we're offering
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="text-primary ms-3" style={{ width: '1.5rem', height: '1.5rem' }}>

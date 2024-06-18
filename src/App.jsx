@@ -7,6 +7,7 @@ import About from "./components/About"
 import Services from "./components/Services";
 import NavBar from "./components/NavBar"
 import Footer from "./components/Footer";
+import MouseCursore from "./components/MouseCursore";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/services" element={<Services />} />
 
       </Routes>
+      <MouseCursore />
       <Footer />
     </>
   );

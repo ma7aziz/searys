@@ -44,6 +44,7 @@ const Footer = () => {
                 &copy; {new Date().getFullYear()} Seary Ceuticals. All rights reserved.
             </div>
         </footer>
+    
     );
 };
 

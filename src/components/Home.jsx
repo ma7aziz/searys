@@ -5,6 +5,7 @@ import Brief from './sections/Brief';
 import HomeCarousel from './sections/HomeCarousel';
 import AreasOfInterest from './sections/AreasOfInterest';
 import ContactUs from './sections/ContactUs';
+import Services from './sections/Services'
 
 // function Home() {
 //   const { t, i18n } = useTranslation();
@@ -48,8 +49,10 @@ function Home() {
 
     <HomeCarousel />
     <EmptySection />
+
     <Brief />
-    <AreasOfInterest />
+    {/* <AreasOfInterest /> */}
+    <Services />
     <ContactUs />
     </>
   );
