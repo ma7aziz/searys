@@ -291,3 +291,52 @@ footer {
       opacity: 0;
     }
     
+
+
+    // FOOTER STYLE 
+
+.footer {
+  background-color: $primary-color-dark;
+  color: #fff;
+
+  .footer-logo {
+    width: auto;
+    height: 150px; /* Adjust as needed */
+    max-width: 100%;
+    margin-bottom: 1rem;
+    aspect-ratio: 1.5;
+
+    @media (max-width: 768px) {
+      height: 80px; /* Adjust as needed */
+    }
+  }
+
+  h5 {
+    color: $secondary-color;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $secondary-color; /* Highlight color on hover */
+    }
+  }
+
+  .footer-icon {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $secondary-color; /* Highlight color on hover */
+    }
+  }
+
+  .copyright {
+    text-align: center;
+
+  }
+}
+
