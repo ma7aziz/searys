@@ -1,9 +1,0 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&display=swap");
-@import './vars.scss';
-
-@mixin mQ($rem) {
-    @media screen and (min-width: $rem) {
-        @content;
-    }
-}
-

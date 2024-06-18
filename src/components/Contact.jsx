@@ -48,7 +48,10 @@ function Contact() {
   };
 
   return (
+    <div id="ContactPage">
+
     <div className="container mt-5">
+
       <div className="text-center mb-5">
         <h1 className='fw-bold' ref={textRef}>
           Elevate Your Product Line with Our Expertise in Pharmaceuticals, Nutritionals, and Cosmetics.
@@ -98,6 +101,7 @@ function Contact() {
           <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close" onClick={() => setShowSuccessNotification(false)}></button>
         </div>
       )}
+    </div>
     </div>
   );
 }

@@ -166,22 +166,17 @@ body {
 .contact-button::after,
 .services-button::after {
   content: '→';
-  /* Unicode arrow character */
   margin-left: 10px;
-  /* Space between the text and the arrow */
   font-size: 20px;
-  /* Adjust the size of the arrow */
   display: inline-block;
   transition: margin-left 0.3s, transform 0.3s;
-  /* Smooth transition for hover effect */
+
 }
 
 .contact-button:hover::after,
 .services-button:hover::after {
   margin-left: 15px;
-  /* Increase space on hover to create a sliding effect */
   transform: scaleX(2);
-  /* Stretch the arrow horizontally on hover */
 }
 
 .contact-button {
@@ -340,3 +335,33 @@ footer {
   }
 }
 
+//  Connatct page 
+#ContactPage{
+  background-color: #fff;
+  width: 95%;
+  margin : 20px auto ; 
+  padding-top: 25px  ;
+  padding-bottom: 25px  ;
+  border-radius: 15px;
+  .container {
+      width: 95%;
+
+  }
+}
+
+
+//Service Page
+#ServicesPage {
+  background-color: #fff ;
+  width: 95%;
+  margin : 20px auto ; 
+  border-radius: 15px;
+  .container {
+      width: 95%;
+  }
+
+.card {
+  background-color:#fff;
+}
+
+}

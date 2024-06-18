@@ -14,7 +14,6 @@ const NavBar = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) { // Adjust 56 to match your navbar height
-        console.log(window.scrollY > 600 )
         setSticky(true);
       } else {
         setSticky(false);

@@ -1,85 +1,81 @@
-import React from 'react'
-const rowStyle = {
-  height: '300px',
-  backgroundColor: '#fff',
+import React from 'react';
+
+const cardStyle = {
+ 
   color: 'blue',
-  padding: ' 20px',
-  borderRadius: '20px' ,
-  marginBottom: '10px'
-}
+  padding: '20px',
+  borderRadius: '20px',
+  marginBottom: '10px',
+  textAlign: 'center',
+};
+
 const imgStyle = {
-  objectFit:'fill',
+  objectFit: 'cover',
   width: '100%',
-  height: '250px ',
-}
+  height: '350px',
+  borderRadius: '15px',
+  marginBottom: '15px',
+};
 
 function AreasOfInterest2() {
   return (
-    <section className='p5'>
+    <div className='p-5' id='ServicesPage'>
+      <div className="container">
         <h1 className="text-primary text-center display-4 fw-semibold mx-auto mb-4 lh-sm">Our Areas Of Interest</h1>
-        <div className="container">
-
-          <div className=" card card-body row" style={rowStyle}>
-            <div className="col-md-6" >
-              <img src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        
+        <h5 className='fe-semibold text-center mb-3'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero fugit debitis aut sit laborum adipisci tenetur, non velit libero excepturi, placeat facilis </h5>
+        <div className="row justify-content-center">
+          <div className="col-12 col-md-6 mb-4">
+            <div className="card card-body shadow" style={cardStyle}>
+              <img
+                src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 style={imgStyle}
-                 />
-
-            </div>
-            <div className="col-md-6">
+                alt="Pharmaceutical"
+              />
               <h2 className="text-capitalize text-green mb-4 fs-3">Pharmaceutical</h2>
               <p className="text-primary">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
-
             </div>
           </div>
-          <div className=" card card-body  row" style={rowStyle}>
 
-            
-            <div className="col-md-6">
+          <div className="col-12 col-md-6 mb-4">
+            <div className="card card-body shadow" style={cardStyle}>
+              <img
+                src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                style={imgStyle}
+                alt="Cosmoceutical"
+              />
               <h2 className="text-capitalize text-green mb-4 fs-3">Cosmoceutical</h2>
               <p className="text-primary">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
-
-            </div>
-            <div className="col-md-6" >
-              <img src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                style={imgStyle}
-                alt="" />
-
             </div>
           </div>
-          <div className=" card card-body  row" style={rowStyle}>
 
-            <div className="col-md-6" >
-              <img src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          <div className="col-12 col-md-6 mb-4 ">
+            <div className="card card-body shadow" style={cardStyle}>
+              <img
+                src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 style={imgStyle}
-                 />
-
-            </div>
-            <div className="col-md-6">
-              <h2 className="text-capitalize text-green mb-4 fs-3">Nutraceutical</h2>
+                alt="Nutraceutical"
+              />
+              <h2 className="text-capitalize text-green mb-4  fs-3">Nutraceutical</h2>
               <p className="text-primary">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
-
             </div>
           </div>
-          <div className=" card card-body row" style={rowStyle}>
 
-            
-            <div className="col-md-6">
+          <div className="col-12 col-md-6 mb-4">
+            <div className="card card-body shadow" style={cardStyle}>
+              <img
+                src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                style={imgStyle}
+                alt="Medical Devices"
+              />
               <h2 className="text-capitalize text-green mb-4 fs-3">Medical Devices</h2>
               <p className="text-primary">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
-
-            </div>
-            <div className="col-md-6" >
-              <img src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                style={imgStyle}
-                alt="" />
-
             </div>
           </div>
         </div>
-      
-    </section>
-  )
+      </div>
+    </div>
+  );
 }
 
-export default AreasOfInterest2
+export default AreasOfInterest2;
