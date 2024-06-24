@@ -32,7 +32,7 @@ const NavBar = () => {
 
   return (
     <>
-      <Navbar bg="light" expand="md" className={`navbar ${isSticky ? 'sticky' : ''}`} aria-label="main-navigation">
+      <Navbar  expand="md" className={`navbar ${isSticky ? 'sticky' : ''}`} aria-label="main-navigation">
         <Container>
           <Navbar.Brand as={Link} to="/">
             <img loading="lazy" src={logo} alt="Logo" className="nav-logo d-inline-block align-top" />

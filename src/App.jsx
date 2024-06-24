@@ -28,7 +28,7 @@ function App() {
   const location = useLocation();
 
   if (isLoading) {
-    return <Preloader setIsLoading={setIsLoading} />;
+    // return <Preloader setIsLoading={setIsLoading} />;
   }
 
   return (
@@ -95,7 +95,7 @@ function App() {
           />
         </Routes>
       </AnimatePresence>
-      <MouseCursore />
+      {/* <MouseCursore /> */}
       <Footer />
     </>
   );
