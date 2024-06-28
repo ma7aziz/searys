@@ -1,5 +1,8 @@
 import React from 'react';
 import cosmoImg from '/src/assets/cosmo.jpg';
+import MediImg from '/src/assets/medicine.jpg';
+import DeviceImg from '/src/assets/Glucometer.jpg';
+import ProtienImg from '/src/assets/ProteinPowder.jpg';
 import '/src/styles/Services.scss';
 
 
@@ -14,10 +17,10 @@ const ServiceCard = ({ image, title }) => (
   );
 
 const services = [
-    { image: cosmoImg, title: 'Pharmaceutical' },
+    { image: MediImg, title: 'Pharmaceutical' },
     { image: cosmoImg, title: 'Cosmoceutical' },
-    { image: cosmoImg, title: 'Neutraceutical' },
-    { image: cosmoImg, title: 'Medical Devices' },
+    { image: ProtienImg, title: 'Neutraceutical' },
+    { image: DeviceImg, title: 'Medical Devices' },
 ];
 
 
@@ -31,7 +34,7 @@ const Services = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
             </svg>
           </span>
-          <h1 className="text-white display-4 fw-semibold mx-auto mb-4 lh-sm">Our Areas Of Interest</h1>
+          <h1 className="display-4 fw-semibold mx-auto mb-4 lh-sm">Our Areas Of Interest</h1>
           <div className="container">
             <div className="row">
               {services.map((service, index) => (
@@ -42,7 +45,7 @@ const Services = () => {
             </div>
 
           </div>
-
+          <a className="read-more mt-3 align-self-center" >Read More</a>
         </section>
       </>
     );

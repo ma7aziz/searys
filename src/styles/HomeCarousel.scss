@@ -17,7 +17,7 @@ swiper-slide {
     height: 100%;
     object-fit: cover;
     border-radius: 0%;
-    filter: brightness(66%);
+    filter: brightness(75%);
 }
 
 .slide-caption {
@@ -38,7 +38,7 @@ swiper-slide {
     }
 
     h1 {
-        font-size: 4rem;
+        font-size: 3rem;
         max-width: 50%;
     }
 
@@ -50,7 +50,7 @@ swiper-slide {
     }
 
     #btn1, #btn2 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         border-radius: 20px;
         font-weight: 500;
         letter-spacing: 1.5;
@@ -78,7 +78,7 @@ swiper-slide {
 /* For screens less than 1040px */
 @media (max-width: 1040px) {
     .slide-caption h1 {
-        font-size: 3rem;
+        font-size: 2rem;
         max-width: 70%;
     }
 

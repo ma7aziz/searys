@@ -25,7 +25,7 @@
 }
 
 body {
-  background-color: $background-color;
+  // background-color: $background-color;
   font-size: 10;
   color: $text-color;
   font-family: 'gotham', sans-serif;
@@ -196,6 +196,28 @@ footer {
   background-color: $primary-color-dark ;
 
 }
+ 
+.read-more {
+  background-color: $secondary-color;
+  padding: 12px 25px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 12px;
+  width: fit-content;
+  &::after{
+    content: '→';
+    margin-left: 10px;
+    font-size: 20px;
+    display: inline-block;
+    transition: margin-left 0.3s, transform 0.3s;
+  }
+  
+  &:hover::after {
+    margin-left: 15px;
+    transform: scaleX(2);
+  }
+} 
 
 
 // CAROUSEL

@@ -29,7 +29,7 @@ nav {
   left: 50%;
   border-radius: 15px;
   transform: translateX(-50%);
-  background-color: $background-color;
+  background-color: #fff;
   width: 95%; /* Adjust width as needed */
   z-index: 1000; /* Ensure navbar is on top of other content */
   transition: top 0.5s, background-color 0.5s, width 0.5s , z-inde 0.5s; /* Smooth transitions for top, background-color, and width */
@@ -38,7 +38,7 @@ nav {
   
   .nav-link {
 
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     color: $primary-color;
     margin: 0 10px;
